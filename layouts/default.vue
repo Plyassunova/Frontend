@@ -1,9 +1,9 @@
 <template>
-        <header class = "flex flex-row w-full bg-pink-950 border-b-2 border-pink-400 max-sm:justify-between relative">
-                <div class = "basis-1/4 items-center justify-start px-8 min-w-40 max-sm:basis-auto bg-pink-950">
+        <header class = "flex flex-row w-full bg-pink-900 border-b-2 border-pink-400 max-sm:justify-between relative">
+                <div class = "basis-1/4 items-center justify-start px-8 min-w-40 max-sm:basis-auto bg-pink-900">
                         <img src="assets/images/kitty.png" class = "w-16 h-16 bg-transparent">
                 </div>
-                <div class = "basis-1/4 max-sm:basis-auto bg-pink-950">
+                <div class = "basis-1/4 max-sm:basis-auto bg-pink-900">
                 </div>
                 <nav :class = "{'basis-1/2 flex flex-row items-center justify-end px-8 gap-4': !burger || burger,
                 'max-sm:basis-auto max-sm:absolute max-sm:top-full max-sm:w-full max-sm:justify-center max-sm:flex-col max-sm:gap-0 max-sm:bg-white max-sm:px-0': burger,
@@ -20,15 +20,15 @@
                         <NuxtLink to = "/login" class = "my-auto p-2 hover:bg-pink-700 hover:text-white max-sm:w-full max-sm:border-b-2 max-sm:border-black max-sm:text-center">LogIn</NuxtLink>
                         <NuxtLink to = "/logout" class = "my-auto p-2 hover:bg-pink-700 hover:text-white max-sm:w-full max-sm:border-b-2 max-sm:border-black max-sm:text-center">LogOut</NuxtLink>
                 </nav>
-                <div v-if = "!burger" @click="switch_burger" class = "max-sm:flex max-sm:flex-col max-sm:mr-8 max-sm:justify-between max-sm:items-center max-sm:w-8 max-sm:h-6">
-                        <span class = "h-[3px] w-full bg-blue-950"></span>
-                        <span class = "h-[3px] w-full bg-blue-950"></span>
-                        <span class = "h-[3px] w-full bg-blue-950"></span>
+                <div v-if = "!burger" @click="switch_burger" class = "max-sm:flex max-sm:flex-col max-sm:mt-5 max-sm:mr-8 max-sm:justify-between max-sm:items-center max-sm:w-8 max-sm:h-6">
+                        <span class = "h-[3px] w-full bg-white"></span>
+                        <span class = "h-[3px] w-full bg-white"></span>
+                        <span class = "h-[3px] w-full bg-white"></span>
                 </div>
-                <div class = "max-sm:flex max-sm:flex-col max-sm:mr-8 max-sm:mt-4 max-sm:justify-between max-sm:items-center max-sm:w-8 max-sm:h-6" @click="switch_burger">
-                        <span class = "h-[3px] w-full bg-blue-950 rotate-45 relative top-[9px]"></span>
-                        <span class = "h-[3px] w-full bg-blue-950 opacity-0"></span>
-                        <span class = "h-[3px] w-full bg-blue-950 relative bottom-3 rotate-[-45deg]"></span>
+                <div v-else class = "max-sm:flex max-sm:flex-col max-sm:mr-8 max-sm:mt-4 max-sm:justify-between max-sm:items-center max-sm:w-8 max-sm:h-6" @click="switch_burger">
+                        <span class = "h-[3px] w-full bg-white rotate-45 relative top-[9px]"></span>
+                        <span class = "h-[3px] w-full bg-white opacity-0"></span>
+                        <span class = "h-[3px] w-full bg-white relative bottom-3 rotate-[-45deg]"></span>
                 </div>
         </header>
 
